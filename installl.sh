@@ -4,8 +4,8 @@ red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 GARIS="\033[1;36m"
 NC="\033[0m"
 TIMES="10"
-CHATID="1685106816"
-KEY="6206327239:AAEY-gCnoyfjQYWRuTU0R_Lp_y3ODehABsE"
+CHATID="5879214876"
+KEY="6189318640:AAEgEJcGwckUNCGJul81k3GQW8ag0hNRY2U"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 clear
@@ -14,7 +14,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/FranataVPN/izinvps/ipuk/ip > /root/tmp
+    curl -sS https://raw.githubusercontent.com/irawancandra6699/izinvps/ipuk/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -32,7 +32,7 @@ BURIQ () {
 }
 # https://raw.githubusercontent.com/FranataVPN/izinvps/ipuk/ip 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/FranataVPN/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/irawancandra6699/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -49,7 +49,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/FranataVPN/izinvps/ipuk/ip | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/irawancandra6699/izinvps/ipuk/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -203,13 +203,13 @@ fi
 fi
 
 echo ""
-wget -q https://raw.githubusercontent.com/FranataVPN/VVIP/ipuk/dependencies.sh;chmod +x dependencies.sh;./dependencies.sh
+wget -q https://raw.githubusercontent.com/irawancandra6699/VVIP/ipuk/dependencies.sh;chmod +x dependencies.sh;./dependencies.sh
 rm dependencies.sh
 clear
 
 yellow "Add Domain for vmess/vless/trojan dll"
 echo "-------------------------------------"
-echo "     Scipt FranataSTORE "
+echo "     Scipt KING "
 echo "-------------------------------------"
 read -rp "Input your domain : " -e pp
 read -rp "You Name : " OWNER
@@ -229,7 +229,7 @@ TRX="
 <code>🔐Created : $hariini</code>
 <code>────────────────────</code>
 <i>Notifikasi Via F75.ID</i>
-<b>Tele : @FranataaSTORE</b>
+<b>Tele : @CandraVpnz</b>
 "
 #THEME RED
 cat <<EOF>> /etc/ssnvpn/theme/red
@@ -270,24 +270,24 @@ EOF
 echo -e "$green[INFO]$NC Install SSH"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/FranataVPN/VVIP/ipuk/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/irawancandra6699/VVIP/ipuk/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "$green[INFO]$NC Install XRAY!"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/FranataVPN/VVIP/ipuk/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/irawancandra6699/VVIP/ipuk/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 clear
-wget https://raw.githubusercontent.com/FranataVPN/VVIP/ipuk/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/irawancandra6699/VVIP/ipuk/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 clear
-wget https://raw.githubusercontent.com/FranataVPN/VVIP/ipuk/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/irawancandra6699/VVIP/ipuk/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
-wget https://raw.githubusercontent.com/FranataVPN/VVIP/ipuk/websocket/nontls.sh && chmod +x nontls.sh && ./nontls.sh
+wget https://raw.githubusercontent.com/irawancandra6699/VVIP/ipuk/websocket/nontls.sh && chmod +x nontls.sh && ./nontls.sh
 clear
-#wget https://raw.githubusercontent.com/FranataVPN/VVIP/ipuk/slowdns/install-sldns.sh && chmod +x install-sldns.sh && ./install-sldns.sh
+#wget https://raw.githubusercontent.com/irawancandra6699/VVIP/ipuk/slowdns/install-sldns.sh && chmod +x install-sldns.sh && ./install-sldns.sh
 clear
 echo -e "$green[INFO]$NC Download Extra Menu"
 sleep 2
-wget https://raw.githubusercontent.com/FranataVPN/VVIP/ipuk/update/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/irawancandra6699/VVIP/ipuk/update/update.sh && chmod +x update.sh && ./update.sh
 clear
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 clear
@@ -316,7 +316,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/FranataVPN/VVIP/ipuk/version  )
+serverV=$( curl -sS https://raw.githubusercontent.com/irawancandra6699/VVIP/ipuk/version  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
@@ -372,12 +372,12 @@ echo "   - Admin Control" | tee -a log-install.txt
 echo "   - Restore Data" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   >>> Contact : +6282241967317 (Text Only)"  | tee -a log-install.txt
+echo "   >>> Contact : +6281573872702 (Text Only)"  | tee -a log-install.txt
 echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script FranataSTORE ]-==============="
+echo "===============-[ Script irawancandra6699 ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
